@@ -11,8 +11,3 @@ def mood_response(mood):
     # Get the response for the mood if available; otherwise, give a generic response
     return responses.get(mood.lower(), "I'm here for you no matter how you're feeling.")
 
-# Main.py
-import mood_responses
-
-mood = input("How are you feeling today? ")
-print(mood_responses.mood_response(mood))
